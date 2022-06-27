@@ -1,14 +1,5 @@
-import React, { PureComponent } from 'react'
-import {
-  RadialBarChart,
-  RadialBar,
-  Legend,
-  Tooltip,
-  ResponsiveContainer,
-  PieChart,
-  Pie,
-  Cell,
-} from 'recharts'
+import React from 'react'
+import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import styled from 'styled-components'
 import '../../style/kpi.css'
 import PropTypes from 'prop-types'
