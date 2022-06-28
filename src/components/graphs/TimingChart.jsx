@@ -2,6 +2,7 @@ import React from 'react'
 import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from 'recharts'
 import styled from 'styled-components'
 import { useFetch } from '../../utils/hooks/UseFetch'
+import { TimingChartFormatting } from '../../utils/FormattingDatas'
 import { useSearchParams } from 'react-router-dom'
 
 function TimingChart() {
@@ -39,22 +40,9 @@ function TimingChart() {
   )
 
   if (!isLoading) {
-    // Transform backend datas for Rechart display
-    const sessionsDatas = data.data.sessions
-    const transformedDatasForDisplay = [...sessionsDatas]
-    const firstValueOfChart = { ...transformedDatasForDisplay[0] }
-    const lastValueOfChart = {
-      ...transformedDatasForDisplay[transformedDatasForDisplay.length - 1],
-    }
-    firstValueOfChart.day = 0
-    lastValueOfChart.day = transformedDatasForDisplay.length
-    lastValueOfChart.sessionLength = lastValueOfChart.sessionLength + 10
-    transformedDatasForDisplay.unshift(firstValueOfChart)
-    transformedDatasForDisplay.push(lastValueOfChart)
-    const fisrtLetterOfTheDay = ['', 'L', 'M', 'M', 'J', 'V', 'S', 'D', '']
-    const sessionDataWithLetter = transformedDatasForDisplay.map((e, index) => {
-      e.letter = fisrtLetterOfTheDay[index]
-    })
+    // Format backend datas for Rechart display
+    const transformedDatasForDisplay = TimingChartFormatting(data.data.sessions)
+
     if (error) {
       return <span>Une erreur est survenue, {error}</span>
     }

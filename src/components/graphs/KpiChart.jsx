@@ -3,6 +3,7 @@ import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import styled from 'styled-components'
 import '../../style/kpi.css'
 import PropTypes from 'prop-types'
+import { KpiChartFormatting } from '../../utils/FormattingDatas'
 
 /**
 * Display Nutritionnal cards from user performances
@@ -49,15 +50,8 @@ function KpiChart({ userDailyScore }) {
     font-size: 20px;
     font-weight: 800;
   `
-  // Transform datas for recharts display, number to array with score and total
-  const scoreDataForRecharts = [
-    {
-      value: userDailyScore * 100,
-    },
-    {
-      value: 100 - userDailyScore * 100,
-    },
-  ]
+  // Format backend datas for Rechart display
+  const scoreDataForRecharts = KpiChartFormatting(userDailyScore)
 
   //Colors of Pies
   const colorsOfPiesCharts = ['#FF0000', '#FFFFFF']

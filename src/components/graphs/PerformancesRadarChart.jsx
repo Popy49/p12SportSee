@@ -10,6 +10,7 @@ import {
 import styled from 'styled-components'
 import { useFetch } from '../../utils/hooks/UseFetch'
 import { useSearchParams } from 'react-router-dom'
+import { PerformancesRadarChartFormatting } from '../../utils/FormattingDatas'
 
 function PerformancesRadarChart() {
   //STYLES
@@ -81,13 +82,16 @@ function PerformancesRadarChart() {
   )
 
   if (!isLoading) {
-    const mergeArray = data.data.data
-    //Transform data number to kind word for rechart display
-    mergeArray.map((e, index) => {
-      if (parseInt(Object.keys(data.data.kind)[index]) === e.kind) {
-        e.kind = Object.values(data.data.kind)[index]
-      }
-    })
+    // const mergeArray = data.data.data
+    // //Transform data number to kind word for rechart display
+    // mergeArray.map((e, index) => {
+    //   if (parseInt(Object.keys(data.data.kind)[index]) === e.kind) {
+    //     e.kind = Object.values(data.data.kind)[index]
+    //   }
+    // })
+    // Format backend datas for Rechart display
+    const mergeArray = PerformancesRadarChartFormatting(data)
+
     if (error) {
       return <span>Une erreur est survenue, {error}</span>
     }

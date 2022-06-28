@@ -1,10 +1,7 @@
-![Alt text](/src/assets/snapshot.png?raw=true 'Snapshot')
-
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-
 # Sport See : Analytic dashboard for sport made with React
 
 Front-end application for dashboard sport application with charts. Made with React and recharts library.
+![Alt text](/src/assets/snapshot.png?raw=true 'Snapshot')
 
 ## 1. Technologies
 
@@ -28,8 +25,8 @@ Front-end application for dashboard sport application with charts. Made with Rea
 ### 2.2 Frontend installation
 
 - Clone the repository : https://github.com/Popy49/p12SportSee.git
-- On the frontend file, install dependencies : `npm install`
-- Launch application on port 3001 : `npm run start`
+- On the frontend file, install dependencies : `yarn`
+- Launch application on port 3001 : `yarn start`
 
 ## 3. URI
 
