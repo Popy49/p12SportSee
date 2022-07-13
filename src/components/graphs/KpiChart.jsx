@@ -82,7 +82,13 @@ function KpiChart({ userDailyScore }) {
         </PieChart>
       </ResponsiveContainer>
       <StyledComment>
-        <StyledScore>{userDailyScore * 100}%</StyledScore> de votre objectif
+        {isNaN(userDailyScore) ? (
+          <StyledScore>Données erronées</StyledScore>
+        ) : (
+          <div>
+            <StyledScore>{userDailyScore * 100}%</StyledScore> de votre objectif
+          </div>
+        )}
       </StyledComment>
     </StyledWrapper>
   )

@@ -31,5 +31,6 @@ Front-end application for dashboard sport application with charts. Made with Rea
 ## 3. URI
 
 You can access to application with both URL :
-http://localhost:3001/user/12?id=12
-http://localhost:3001/user/18?id=18
+
+- http://localhost:3001/user/12?id=12
+- http://localhost:3001/user/18?id=18

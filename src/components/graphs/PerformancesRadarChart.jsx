@@ -82,13 +82,6 @@ function PerformancesRadarChart() {
   )
 
   if (!isLoading) {
-    // const mergeArray = data.data.data
-    // //Transform data number to kind word for rechart display
-    // mergeArray.map((e, index) => {
-    //   if (parseInt(Object.keys(data.data.kind)[index]) === e.kind) {
-    //     e.kind = Object.values(data.data.kind)[index]
-    //   }
-    // })
     // Format backend datas for Rechart display
     const mergeArray = PerformancesRadarChartFormatting(data)
 
