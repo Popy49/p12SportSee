@@ -90,7 +90,7 @@ function PerformancesRadarChart() {
     }
     return (
       <StyledWrapper>
-        <h1 hidden="true">Performances</h1>
+        <h1 hidden={true}>Performances</h1>
         <ResponsiveContainer width="100%" height={266}>
           <RadarChart
             outerRadius={80}

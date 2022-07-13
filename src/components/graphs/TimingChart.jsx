@@ -53,8 +53,8 @@ function TimingChart() {
           <LineChart width={300} height={200} data={transformedDatasForDisplay}>
             <defs>
               <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#ffffff" stop-opacity="0.4" />
-                <stop offset="100%" stopColor="#ffffff" stop-opacity="1" />
+                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.4" />
+                <stop offset="100%" stopColor="#ffffff" stopOpacity="1" />
               </linearGradient>
             </defs>
             <Line

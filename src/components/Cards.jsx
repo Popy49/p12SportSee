@@ -49,6 +49,7 @@ function Cards(userNutritionnalsDatas) {
     <StyledCards>
       {valueOfNutritionalItem.map((e, index) => (
         <Card
+          key={index}
           pictogramme={
             <StyledLogo
               src={logosOfNutritionalItem[index]}
@@ -65,7 +66,7 @@ function Cards(userNutritionnalsDatas) {
 }
 
 Card.propTypes = {
-  userNutritionnalsDatas: PropTypes.object.isRequired,
+  userNutritionnalsDatas: PropTypes.object,
 }
 
 export default Cards

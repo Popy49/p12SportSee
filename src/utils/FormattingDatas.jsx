@@ -1,7 +1,7 @@
 //Formatting function for diplay in recharts
 
 /**
-* Display Nutritionnal cards from user performances
+* Display Nutritionnal cards from user performances graphs/TimingChart
 *
 * @param datas object of data session time
 
@@ -31,7 +31,7 @@ export function TimingChartFormatting(datas) {
 }
 
 /**
-* Display Nutritionnal cards from user performances
+* Display Nutritionnal cards from user performances graphs/PerformancesRadarChart
 *
 * @param datas object of perfomrances datas
 
@@ -52,7 +52,7 @@ export function PerformancesRadarChartFormatting(datas) {
 }
 
 /**
-* Display Nutritionnal cards from user performances
+* Display Nutritionnal cards from user performances graphs/KpiChart
 *
 * @param userDailyScore number of user daily score
 

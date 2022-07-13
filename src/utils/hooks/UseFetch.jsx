@@ -24,12 +24,16 @@ export function useFetch(url) {
     async function fetchData() {
       try {
         const response = await fetch(url)
-        const data = await response.json()
-        setLoading(true)
-        setData(data)
+        console.log(response.status)
+        if (response.status === 200) {
+          const data = await response.json()
+          setLoading(true)
+          setData(data)
+        } else {
+          setError("Code d'erreur : " + response.status)
+        }
       } catch (err) {
-        console.log(err)
-        setError(true)
+        setError(err)
       } finally {
         setLoading(false)
       }
