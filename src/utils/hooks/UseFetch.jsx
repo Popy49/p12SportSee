@@ -27,6 +27,7 @@ export function useFetch(url) {
         console.log(response.status)
         if (response.status === 200) {
           const data = await response.json()
+          console.log(data)
           setLoading(true)
           setData(data)
         } else {

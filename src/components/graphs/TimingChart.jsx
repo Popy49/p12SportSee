@@ -35,9 +35,10 @@ function TimingChart() {
   const id = searchParams.get('id')
 
   //API Call
-  const { data, isLoading, error } = useFetch(
-    `http://localhost:3000/user/${id}/average-sessions`
-  )
+  // const { data, isLoading, error } = useFetch(
+  //   `http://localhost:3000/user/${id}/average-sessions`
+  // )
+  const { isLoading, data, error } = useFetch(`./session.json`)
 
   if (!isLoading) {
     // Format backend datas for Rechart display

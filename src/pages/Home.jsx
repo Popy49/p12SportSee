@@ -64,13 +64,15 @@ function Home() {
 
   //API Call
   const { data, isLoading, error } = useFetch(
-    `http://localhost:3000/user/${id}`
+    // `http://localhost:3000/user/${id}`
+    `https://popy49user.free.beeceptor.com/user/12`
   )
 
   if (!isLoading) {
     if (error) {
       return <span>Une erreur est survenue, {error}</span>
     }
+    console.log(data)
     const userFirstName = data.data.userInfos.firstName
     const userDailyScore = data.data.todayScore
     const userNutritionnalsDatas = data.data.keyData

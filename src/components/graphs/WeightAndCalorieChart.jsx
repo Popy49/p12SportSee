@@ -46,9 +46,11 @@ function WeightAndCalorieChart() {
   const id = searchParams.get('id')
 
   //API Call
-  const { data, isLoading, error } = useFetch(
-    `http://localhost:3000/user/${id}/activity`
-  )
+  // const { data, isLoading, error } = useFetch(
+  //   `http://localhost:3000/user/${id}/activity`
+  // )
+  const { isLoading, data, error } = useFetch(`./activity.json`)
+
   if (!isLoading) {
     if (error) {
       return <span>Une erreur est survenue, {error}</span>

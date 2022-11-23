@@ -30,56 +30,15 @@ function PerformancesRadarChart() {
       margin-right: 20px;
     }
   `
-
-  //MOCKED DATAS
-  // const perf = [
-  //   {
-  //     userId: 12,
-  //     kind: {
-  //       1: 'cardio',
-  //       2: 'energy',
-  //       3: 'endurance',
-  //       4: 'strength',
-  //       5: 'speed',
-  //       6: 'intensity',
-  //     },
-  //     data: [
-  //       {
-  //         value: 80,
-  //         kind: 1,
-  //       },
-  //       {
-  //         value: 120,
-  //         kind: 2,
-  //       },
-  //       {
-  //         value: 140,
-  //         kind: 3,
-  //       },
-  //       {
-  //         value: 50,
-  //         kind: 4,
-  //       },
-  //       {
-  //         value: 200,
-  //         kind: 5,
-  //       },
-  //       {
-  //         value: 90,
-  //         kind: 6,
-  //       },
-  //     ],
-  //   },
-  // ]
-
   // GET User ID
   const [searchParams, setSearchParams] = useSearchParams()
   const id = searchParams.get('id')
 
   //API Call
-  const { data, isLoading, error } = useFetch(
-    `http://localhost:3000/user/${id}/performance`
-  )
+  // const { data, isLoading, error } = useFetch(
+  //   `http://localhost:3000/user/${id}/performance`
+  // )
+  const { isLoading, data, error } = useFetch(`./performances.json`)
 
   if (!isLoading) {
     // Format backend datas for Rechart display

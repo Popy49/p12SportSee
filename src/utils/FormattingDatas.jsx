@@ -11,6 +11,7 @@
 */
 export function TimingChartFormatting(datas) {
   // Transform backend datas for Rechart display
+
   const sessionsDatas = datas
   const transformedDatasForDisplay = [...sessionsDatas]
   const firstValueOfChart = { ...transformedDatasForDisplay[0] }
@@ -41,6 +42,7 @@ export function TimingChartFormatting(datas) {
 */
 export function PerformancesRadarChartFormatting(datas) {
   // Transform backend datas for Rechart display
+  console.log(datas)
   const mergeArray = datas.data.data
   //Transform data number to kind word for rechart display
   mergeArray.map((e, index) => {
