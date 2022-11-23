@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/p12SportSee%20%20/static/css/main.8b3700a8.css",
+    "main.js": "/p12SportSee%20%20/static/js/main.5549a2eb.js",
+    "static/media/logo.png": "/p12SportSee%20%20/static/media/logo.e950560f9b83b1780687.png",
+    "static/media/carbs-icon.svg": "/p12SportSee%20%20/static/media/carbs-icon.889f22d4f00c2b2c0c40f611730b8d4f.svg",
+    "index.html": "/p12SportSee%20%20/index.html",
+    "static/media/fat-icon.svg": "/p12SportSee%20%20/static/media/fat-icon.5f240256891bde52bc80e02f82371dd7.svg",
+    "static/media/protein-icon.svg": "/p12SportSee%20%20/static/media/protein-icon.e23e2ae3a310fcfc323deac52f29420b.svg",
+    "static/media/calories-icon.svg": "/p12SportSee%20%20/static/media/calories-icon.3067c742293e6d0833f654a885812c50.svg",
+    "main.8b3700a8.css.map": "/p12SportSee%20%20/static/css/main.8b3700a8.css.map",
+    "main.5549a2eb.js.map": "/p12SportSee%20%20/static/js/main.5549a2eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b3700a8.css",
+    "static/js/main.5549a2eb.js"
+  ]
+}
