@@ -63,10 +63,12 @@ function Home() {
   const id = searchParams.get('id')
 
   //API Call
-  const { data, isLoading, error } = useFetch(
-    // `http://localhost:3000/user/${id}`
-    `https://popy49user.free.beeceptor.com/user/12`
-  )
+  // const { data, isLoading, error } = useFetch(
+  //   // `http://localhost:3000/user/${id}`
+  //   `https://popy49user.free.beeceptor.com/user/12`
+  // )
+
+  const { isLoading, data, error } = useFetch(`./user.json`)
 
   if (!isLoading) {
     if (error) {
