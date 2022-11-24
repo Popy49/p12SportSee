@@ -59,8 +59,8 @@ function Home() {
   `
 
   // GET User ID
-  const [searchParams, setSearchParams] = useSearchParams()
-  const id = searchParams.get('id')
+  // const [searchParams, setSearchParams] = useSearchParams()
+  // const id = searchParams.get('id')
 
   //API Call
   // const { data, isLoading, error } = useFetch(
